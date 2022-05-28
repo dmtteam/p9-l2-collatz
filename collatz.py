@@ -2,52 +2,39 @@
 
 # x=0
 while True:
-    print('Podaj x: 1-100')
+    print('Lets check the length of the Collatz sequence before it reaches one! \nEnter a starting number: 1-100')
     x = int(input())
     first = x
-    if x==0 or x>100:
-        print('Liczba powinna być z zakresu 1-100. Wprowadz jeszcze raz!')
+    if x == 0 or x > 100:
+        print('The number should be in the range 1-100. Try Again!')
         continue
-
-    a=0
-    licznik=0
+    step = 0
+    counter = 0
     while True:
-        a +=1
-
+        step += 1
 
 # b=int(sys.argv[1])
-# for ile in range(b):
+# for y in range(b):
 
         if x == 1:
 
-# licznik=licznik-1
+# counter = counter-1
 
-            licznik += 1
-            print("Długość ciągu do osiągniecia jedynki to:", licznik, ", gdy rozpoczyna się liczbą:", first)
+            counter += 1
+            print("The length of the string until it reaches one is:", counter, ", when it starts with a number:", first)
             break
 
         if x % 2 == False:
-            x=(x/2)
+            x = (x/2)
             print(x)
-            licznik += 1
+            counter += 1
         else:
-            x=(3 * x+1)
+            x = (3 * x+1)
             print(x)
-            licznik +=1
-            print('Aktualna długość ciągu to:', licznik+1, '(liczę dalej)...')
+            counter += 1
+            print('The current string length is:', counter+1, '(I keep counting)...')
             continue
     print("End")
     break
 
-# print('Koniec zadeklarowanego przebiegu sys.argv[1]')
-
-
-
-
-
-
-
-
-
-
-
+# print('End of declared mileage sys.argv[1]')
