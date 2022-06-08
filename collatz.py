@@ -1,6 +1,8 @@
 #import sys
 
 # x=0
+#
+
 while True:
     print('Lets check the length of the Collatz sequence before it reaches one! \nEnter a starting number: 1-100')
     x = int(input())
